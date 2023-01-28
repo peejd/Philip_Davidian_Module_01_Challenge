@@ -19,6 +19,7 @@ This is a simple webpage deployed to and hosted on GitHub Pages. It can be loade
 
 This refactored webpage is live on GitHub Pages.
 To view it, use a web browser to navigate to the following URL:
+https://peejd.github.io/Philip_Davidian_Module_01_Challenge/
 
 
 ## Credits

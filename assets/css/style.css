@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+/*  Changed all header selectors below to point to new header element
+    instead of div element with class of "header", to match change in HTML for semantics. */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .seo {
+    color: #d9dcd6; 
+}
+
+/*  Changed child element name in selectors below to "nav" from "div" for semantics. */
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*  This applies to the nav bar anchor links at top of page */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*  This applies to all normal paragraph text on the page. */
+p {
+    font-size: 16px;
+}
+
+/*  This applies to the main big image on the page */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*  The float-left and float-right classes apply to the images within the section article elements */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*  This applies to the whole section parent element on the page. */
+.section-content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*  This was consolidated into a single class/selector from 3 separate classes/selectors since the same styling applied to all 3.
+    This was moved up from lower in the page to follow the same sequence of elements in the HTML.
+    Applies to each of the article child elements within the section parent element. */
+.article-content {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/*  This was also consolidated into a single class/selector from 3 separate ones, as it was redundant, 
+    and was moved up from lower on the page to follow HTML element sequence.
+    Aapplies sizing constraints to the images within the article child elements. */
+.article-content img {
+    max-height: 200px;
+}
+/*  This was also consolidated into a single class/selector from 3 separate ones, as it was redundant, 
+    and was moved up from lower on the page to follow HTML element sequence.
+    Aapplies styling to the heading text within the article child elements. */
+.article-content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*  This selector was renamed to point to the new "aside" parent element, 
+    which was changed from a "div" with a class of "benefits" in the HTML, for semantic reasons. */
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*  The next 3 style items were consolidated into a single class/selector from 3 separate ones, as it was redundant 
+    since the same styling applies to all 3 child div elements within the "aside" parent element.
+    This applies styling to the div child element layout. */
+.benefit {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+/*  This applies styling to the div heading text within the aside parent element. */
+.benefit h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*  This applies layout and sizing constraints to the icons within the aside parent element. */
+.benefit img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*  Changed the 2 footer selectors below to point to new footer element
+    instead of a div element with class of "footer", to match change in HTML for semantics. */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* This applies font size to the footer section heading text */
+footer h2 {
+    font-size: 20px;
+}

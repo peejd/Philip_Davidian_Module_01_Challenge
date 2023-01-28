@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Horiseon</title>
+</head>
+
+<body>
+
+    <!-- Changed div element to Header element for semantics (includes Company Name and Top Navigation links) -->
+    <header>
+        <!--Company Name (I left the span tag here because it was the only intuitive way to change color of just 3 letters within the word.)-->
+        <h1>Hori<span class="seo">seo</span>n</h1>
+        <!--Top Navigation Links (changed div element to nav element for semantics).-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Left this as a div since it only include a single image referenced in CSS).-->
+    <div class="hero"></div>
+
+    <!--Changed div element to section element with a class of section-content for semantics.-->
+    <section class="section-content">
+
+        <!--Changed div elements to article elements for semantics.
+            Gave them all the same class of "article-content" since the same css styling applies to all 3 articles within this section.
+            Left the Id's in place as they enable links in the nav bar.-->
+
+        <article class="article-content" id="search-engine-optimization">
+            <!--Aricle 1 Image (Added alt tag for accessibility).-->
+            <img 
+                class="float-left" 
+                src="./assets/images/search-engine-optimization.jpg"
+                alt="Notebook with illustration of web of SEO considerations"
+            />
+            <!--Article 1 heading-->
+            <h2>Search Engine Optimization</h2>
+            <!--Article 1 text-->
+            <p>
+                The dominance of mobile internet use means that users are searching for the right business as they travel, 
+                shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility 
+                and find the right customers for your business.
+            </p>
+        </article>
+
+        <article class="article-content" id="online-reputation-management">
+            <!--Aricle 2 Image (Added alt tag for accessibility).-->
+            <img 
+                class="float-right"
+                src="./assets/images/online-reputation-management.jpg" 
+                alt="Person on computer tracking website reputation" 
+            />
+            <!--Article 2 heading-->
+            <h2>Online Reputation Management</h2>
+            <!--Article 2 text-->
+            <p>
+                The web is full of opinions, and some of these can be negative. 
+                Social media allows anyone with an internet connection to say whatever they want about your business. 
+                Online Reputation Management gives you the control over what potential customers see when they search for your business.
+            </p>
+        </article>
+
+        <article class="article-content" id="social-media-marketing">
+            <!--Aricle 3 Image (Added alt tag for accessibility).-->
+            <img 
+                class="float-left"    
+                src="./assets/images/social-media-marketing.jpg"   
+                alt="Table full of people on computers using social media" 
+            />
+            <!--Article 3 heading-->
+            <h2>Social Media Marketing</h2>
+            <!--Article 3 text-->
+            <p>
+                Social media continues to have a sizable influence on buying habits. 
+                Social media marketing helps you determine which platforms are suited to your brand, 
+                using analytics to find the right markets and increase your lead generation.
+            </p>
+        </article>
+
+    </section>
+
+    <!--Sidebar to the right of articles.
+        Changed div element to aside element for semantics since this is a sidebar.-->
+    <aside class="sidebar">
+
+        <!--Gave all 3 div elements within the sidebar parent element the same class name of "benefits", 
+            since css styling is the same for all 3.-->
+        <div class="benefit">
+            <!--Benefit 1 heading-->
+            <h3>Lead Generation</h3>
+            <!--Benefit 1 Icon (Added alt text for accessibility)-->
+            <img src="./assets/images/lead-generation.png" alt="Icon showing gears turning into money"/>
+            <!--Benefit 1 description-->
+            <p>
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+            </p>
+        </div>
+
+        <div class="benefit">
+            <!--Benefit 2 heading-->
+            <h3>Brand Awareness</h3>
+            <!--Benefit 2 Icon (Added alt text for accessibility)-->
+            <img src="./assets/images/brand-awareness.png" alt="Icon showing man with illuminated lightbulb for a head"/>
+            <!--Benefit 2 description-->
+            <p>
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+            </p>
+        </div>
+
+        <div class="benefit">
+            <!--Benefit 3 heading-->
+            <h3>Cost Management</h3>
+            <!--Benefit 3 Icon (Added alt text for accessibility)-->
+            <img src="./assets/images/cost-management.png" alt="Icon showing gears turning monetary coins" />
+            <!--Benefit 3 description-->
+            <p>
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </p>
+        </div>
+
+    </aside>
+
+     <!--Changed div element to footer element for semantics-->
+    <footer>
+        <!-- Footer heading.-->
+        <h2>Made with ❤️️ by Horiseon</h2>
+        <!--Copyright information.-->
+        <p>
+            &copy; 2019 Horiseon Social Solution Services, Inc.
+        </p>
+    </footer>
+
+</body>
+
+</html>
